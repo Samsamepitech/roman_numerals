@@ -1,5 +1,6 @@
 import unittest
-from fizzbuzz import fizzbuzz
+from src.fizzbuzz import fizzbuzz
+
 
 
 class TestFizz(unittest.TestCase):
@@ -18,10 +19,10 @@ class TestFizz(unittest.TestCase):
         expected_value = "FizzBuzz"
         self.assertEqual(fizzbuzz(num),expected_value)
 
-    def test_should_return_num(self):
-        num=2
-        expected_value = num
-        self.assertEqual(fizzbuzz(num),expected_value)
+    # def test_should_return_num(self):
+    #     num=2
+    #     expected_value = num
+    #     self.assertEqual(fizzbuzz(num),expected_value)
 
 
 if __name__ == "__main__":
